@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart System</title>
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <h1>Order Your Cake</h1>
+    <form id="order-form" onsubmit="submitOrder(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" required><br><br>
+        
+        <label for="cake">Cake Occasion:</label>
+        <input type="text" id="cake" name="cakeOcasion" required><br><br>
+        
+        <label for="flavour">Cake Flavour:</label>
+        <input type="text" id="flavour" name="cakeFlavour" required><br><br>
+        
+        <label for="size">Size (in pounds):</label>
+        <input type="number" id="size" name="size" required><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+        
+        <label for="design">Design:</label>
+        <input type="file" id="design" name="design"><br><br>
+        
+        <label for="price">Price per pound:</label>
+        <input type="number" id="price" name="price" required><br><br>
+        
+        <button type="button" onclick="addToCart(type.value, cake.value, price.value)">Add to Cart</button>
+    </form>
+    
+    <h2>Cart</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Cake Occasion</th>
+                <th>Size</th>
+                <th>Design</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+    </table>
+    
+    <form id="checkout-form" onsubmit="submitOrder(event)">
+        <label for="total-price">Total Price:</label>
+        <input type="text" id="total-price" name="totalPrice" readonly><br><br>
+        
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
+</html>

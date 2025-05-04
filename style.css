@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 0.8rem 1rem;
+    background-color: #343a40; /* Dark background for the navbar */
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+    color: #f8f9fa; /* Light color for text */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4d4d4; /* Slightly lighter color on hover */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-left: auto;
+}
+
+.right-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.right-nav a {
+    color: #007bff; /* Blue color for time, date, and phone number */
+    text-decoration: none;
+}
+
+.right-nav a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.right-nav a i {
+    margin-right: 0.5rem;
+}
+
+/* Cake Items */
+.cake-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cake-item {
+    flex: 1 1 calc(33% - 1rem);
+    margin: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cake-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cake-item p {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* About Us Page */
+.social-icons a {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.embed-responsive {
+    margin-top: 1rem;
+}
+
+.embed-responsive iframe {
+    border: 0;
+}

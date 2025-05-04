@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>About Us - Cakeshop</title>
+	<style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .navbar {
+      padding: 0.8rem 1rem;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .navbar-nav .nav-link {
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .navbar-nav .nav-item:last-child {
+      margin-left: auto;
+    }
+
+    .right_nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .right_nav ul li {
+      margin-left: 1rem;
+    }
+
+    .right_nav ul li a {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .right_nav ul li a i {
+      margin-right: 0.5rem;
+    }
+
+    .header {
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      border-bottom: 5px solid #f8f9fa;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .btn-primary {
+      background-color: #6f42c1;
+      border-color: #6f42c1;
+    }
+
+    .btn-primary:hover {
+      background-color: #5a2a91;
+      border-color: #5a2a91;
+    }
+
+    footer {
+      background-color: #343a40;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .right_nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img src="./cake.png" alt="Cake Shop Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cakes.html">Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./About%20us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <div class="right-nav ml-auto d-flex align-items-center">
+                <a class="nav-link" href="#"><i class="fas fa-clock"></i> 10am to 7pm</a>
+                <a class="nav-link" href="#"><i class="fas fa-calendar-day"></i> Monday - Sunday</a>
+                <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i> 01882727244</a>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Cakes" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="text-center">
+            <img src="https://wallpapercave.com/wp/wp7580524.jpg" class="rounded-circle img-fluid my-3" alt="About Us Image">
+            <h2 class="text-center my-3">About Us</h2>
+            <p>Welcome to [Cake Shop Name], where we bake happiness in every slice. Founded [year], we're dedicated to crafting exquisite cakes that not only look stunning but taste even better.</p>
+
+            <h2 class="text-center my-3">Our Mission</h2>
+            <p>At [Cake Shop Name], we believe in celebrating life's moments with sweetness and style. From birthdays to weddings and everything in between, our cakes are designed to make every occasion unforgettable.</p>
+
+            <h2 class="text-center my-3">Our Promise</h2>
+            <p>Using only the finest ingredients and a passion for perfection, each cake is a masterpiece of flavor and artistry. Whether you're craving a classic favorite or dreaming of a custom creation, we're here to exceed your expectations.</p>
+        </div>
+
+        <div class="text-center my-5">
+            <h3>Contact Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourpagename" target="_blank"><img src="/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/yourusername" target="_blank"><img src="/instagram.png" alt="Instagram"></a>
+                <a href="mailto:youremail@example.com" target="_blank"><img src="/gmail.png" alt="Gmail"></a>
+            </div>
+            <br>
+            <h3>Our Location</h3>
+            <p>Address: Tongi, Gazipur, Bangladesh</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.457955312095!2d90.37!3d23.95!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b5f5b5d2c5d8f0e!2sTongi%2C+Gazipur%2C+Bangladesh!5e0!3m2!1sen!2sus!4v1558681857985!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="mb-0">Copyright ©Osman Gani Mridul</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0">Address: 1234 Cake Street, Gazipur, Dhaka</p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <a href="./contact.html" class="text-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
